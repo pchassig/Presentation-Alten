@@ -1,34 +1,84 @@
+body, html{
+    --couleur1: #1A4844;
+    --couleur2: #37636A;
+    --couleur3: #537F90;
+    --couleur4: #709ab6;
+    --couleur5: #8CB5DC;
+    --police: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    font-family: var(--police);
+}
+
+h2{
+    scroll-margin-top: 80px; /* Déplace la position du scroll vers le bas */
+  }
+
 header{
-    background-color: lightblue;
+    background-color: var(--couleur2);
     height: 50px;
     position: fixed;
+    top : 0;
+    left: 0;
+    z-index: 1;
     width: 100%;
 }
 
-header nav a{
-    float: right;
+#nav_principal{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#nav_principal a:hover{
+    background-color: var(--couleur1);
+    color: var(--couleur5);
+}
+
+#selectionner{
+    background-color: var(--couleur1);
+    color: var(--couleur5);
+}
+
+#nav_principal a{
+    cursor: pointer;
+    padding: 0.5em;
+    border-radius: 50px;
+}
+
+#nav_principal a{
+    color: var(--couleur5);
+    text-decoration: none;
+}
+
+#nav_sousT a{
     color: black;
-    padding-right: 25%;
-    padding-top: 1%;
+    text-decoration: none;
 }
 
-header img{
+header nav{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#nav_sousT{
+    background-color: var(--couleur3);
+    height: 1.2em;
+}
+
+#logo_navigation{
     float: left;
-    width: 2%;
-    height: 100%;
+    width: 30px;
+    height: 50px;
 }
 
-body,html{
-    margin: 0;
-    background-color: red;
+main{
+    margin-top: 5em;
+    margin-left: 10px;
 }
 
 
-.body-container{
-    margin-top: 35px;
-}
-
-.window-container.flex{
+.window-container{
     display: flex;
 
     flex-direction: row;
@@ -39,19 +89,18 @@ body,html{
     gap: 0px;
 }
 
-div{
+.section1 div, .section2 div{
     text-align: center;
 }
 
 .section1 div{
-    width: 50%;
+    width: 49%;
     height: 300px;
-    background-color: blue;
-    padding: 0;
+    border: 2px solid black;
 }
 
 .section1 img{
-    width: 50%;
+    width: 49%;
     height: 300px;
     float: right;
     padding: 0;
@@ -59,15 +108,14 @@ div{
 }
 
 .section2 div{
-    width: 50%;
+    width: 49%;
     height: 300px;
-    background-color: blue;
     float: right;
-    padding: 0;
+    border: 2px solid black;
 }
 
 .section2 img{
-    width: 50%;
+    width: 49%;
     height: 300px;
     float: left;
     padding: 0;
@@ -75,10 +123,103 @@ div{
 }
 
 footer{
-    background-color: lightblue;
+    background-color: var(--couleur3);
     height: 200px;
 }
 
 iframe{
     float: right;
+}
+
+.test{
+    height: 1000px;
+}
+
+
+#vertical-line {
+    position: relative;
+    left: 40px;
+    width: 10px;
+    height: 100%;
+    background-color: black;
+}
+
+.timeline{
+    margin-left: 50px;
+    height: 1650.5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.circle {
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.instruction{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#timeline_info{
+    padding-left: 14.5px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 10px;
+    padding: 15px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px gray;
+}
+
+.frise_img2{
+    border: solid;
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.frise_img{
+    display: flex;
+    align-items: center;
+}
+
+.horizontal{
+    flex-direction: row;
+    gap: 10px;
+}
+
+.vertical{
+    flex-direction: column;
+}
+
+.frise_text{
+    width: 400px;
+    height: 200px;
+}
+
+#legende_vert{
+    border-left: solid #267F00 20px;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+
+#legende_jaune{
+    border-left: solid #FFD800 20px;
+    margin: 5px;
+}
+
+#legende_2000{
+    margin-left: 10px;
 }
