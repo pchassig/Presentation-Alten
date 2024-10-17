@@ -1,0 +1,46 @@
+.main_index{
+    margin-top: 0;
+}
+.titre_index{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    justify-content: space-between;
+    background-color: #709ab6cb;
+}
+.titre_index img{
+    display: flex;
+    width: 55%;
+}
+
+.slogan_index {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+   
+
+}
+
+.slogan_index h3{ 
+    color: #1A4844;
+    text-align: center;
+    font-size: 20pt;
+    
+    
+}
+.slogan_index h1{ 
+    color: #1A4844;
+    font-size: 120pt;
+    margin:1px
+}
+.slogan_index h5{
+    color:black;
+    text-align: center;
+    font-size: 16pt;
+
+}
+
